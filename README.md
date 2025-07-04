@@ -41,8 +41,10 @@ To configure the database, modify `electron/main.js` to read from a file or a li
 To build/package the app, use the following command:
 ```bash
 npx electron-builder
+```
 
 Ensure that when using the `npx electron-builder` command, the `main.js` file contains the following setup for loading the app:
 
-```js
+`js
 win.loadFile(path.join(app.getAppPath(), "dist/index.html"));
+`
